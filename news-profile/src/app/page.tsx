@@ -41,10 +41,10 @@ export default function Home() {
         <div className="container px-4 md:px-6 flex items-center justify-center space-x-8 max-w-[900px] mx-auto">
           <div className="w-1/2">
             <Image
-              src="/placeholder.svg"
+              src="/me.jpg"
               width={400}
               height={400}
-              alt="John Doe"
+              alt="Edgar Leung"
               className="rounded-full object-cover"
               style={{ aspectRatio: "400/400", objectFit: "cover" }}
             />
