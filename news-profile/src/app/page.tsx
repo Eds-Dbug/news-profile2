@@ -36,7 +36,6 @@ export default function Home() {
         </nav>
       </header>
 
-
       <section id="bio" className="w-full py-12 md:py-24 lg:py-32 bg-background">
         <div className="container px-4 md:px-6 flex items-center justify-center space-x-8 max-w-[900px] mx-auto">
           <div className="w-1/2">
