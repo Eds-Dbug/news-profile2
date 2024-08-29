@@ -19,25 +19,25 @@ export default function Home() {
         </Link>
         <nav className="ml-auto flex gap-4 sm:gap-6">
           <Link href="#" className="text-sm font-medium hover:underline underline-offset-4" prefetch={false}>
-            Home
+            Bio
           </Link>
-          <Link href="#" className="text-sm font-medium hover:underline underline-offset-4" prefetch={false}>
+          <Link href="#skills" className="text-sm font-medium hover:underline underline-offset-4" prefetch={false}>
             Skills
           </Link>
-          <Link href="#" className="text-sm font-medium hover:underline underline-offset-4" prefetch={false}>
+          <Link href="#work" className="text-sm font-medium hover:underline underline-offset-4" prefetch={false}>
             Work
           </Link>
-          <Link href="#" className="text-sm font-medium hover:underline underline-offset-4" prefetch={false}>
+          <Link href="#projects" className="text-sm font-medium hover:underline underline-offset-4" prefetch={false}>
             Projects
           </Link>
-          <Link href="#" className="text-sm font-medium hover:underline underline-offset-4" prefetch={false}>
+          <Link href="#contact" className="text-sm font-medium hover:underline underline-offset-4" prefetch={false}>
             Contact
           </Link>
         </nav>
       </header>
 
 
-      <section id="home" className="w-full py-12 md:py-24 lg:py-32 bg-background">
+      <section id="bio" className="w-full py-12 md:py-24 lg:py-32 bg-background">
         <div className="container px-4 md:px-6 flex items-center justify-center space-x-8 max-w-[900px] mx-auto">
           <div className="w-1/2">
             <Image
@@ -57,7 +57,7 @@ export default function Home() {
               </p>
             </div>
             <Link
-              href="#"
+              href="#contact"
               className="inline-flex h-10 items-center justify-center rounded-md bg-primary px-8 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
               prefetch={false}
             >
