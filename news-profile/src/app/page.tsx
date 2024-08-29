@@ -93,16 +93,36 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section id="work" className="w-full py-12 md:py-24 lg:py-32">
-        <div className="container px-4 md:px-6 flex flex-col items-center justify-center space-y-4 text-center max-w-[900px] mx-auto">
-          <div className="space-y-2">
-            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Work Experience</h2>
-            <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-              Here's a summary of my professional background.
-            </p>
-          </div>
-          <div className="mx-auto grid max-w-5xl items-start gap-6 py-12 lg:grid-cols-2 lg:gap-12">
-            <div className="flex flex-col space-y-4">
+
+
+
+    <section id="work" className="w-full py-12 md:py-24 lg:py-32">
+      <div className="container px-4 md:px-6 flex flex-col items-center justify-center space-y-4 text-center max-w-[900px] mx-auto">
+        <div className="space-y-2">
+          <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Work Experience</h2>
+          <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+            Here's a summary of my professional background.
+          </p>
+        </div>
+        {/* Work Experience Entries */}
+        <div className="mx-auto grid max-w-5xl items-start gap-6 py-12">
+          {/* Job Experience Item */}
+          <div className="flex flex-row space-x-4">
+            {/* Image Section */}
+            <div className="rounded-lg overflow-hidden w-1/2">
+              {/* Next.js Image Component for automatic optimization */}
+              <Image
+                src="/path/to/full-stack-developer-image.svg"  // Update to your image path
+                width={550}  // Adjust width according to your design needs
+                height={310}  // Adjust height accordingly
+                alt="Full-Stack Developer Icon"  // Add descriptive alt text for accessibility
+                className="w-full h-auto object-cover"  // Ensure image covers the allocated area
+                style={{ aspectRatio: "550/310", objectFit: "cover" }}  // Maintains the aspect ratio
+                priority  // Optional: Add priority to preload the image if it's critical
+              />
+            </div>
+            {/* Text Section */}
+            <div className="w-1/2 flex flex-col justify-between text-center">
               <div>
                 <h3 className="text-xl font-bold">Full-Stack Developer</h3>
                 <p className="text-muted-foreground">Acme Inc. | 2020 - Present</p>
@@ -111,6 +131,25 @@ export default function Home() {
                   Collaborated with cross-functional teams to deliver high-quality solutions.
                 </p>
               </div>
+            </div>
+          </div>
+
+          {/* Repeat similar structure for other job experience items */}
+          <div className="flex flex-row space-x-4">
+            {/* Image Section */}
+            <div className="rounded-lg overflow-hidden w-1/2">
+              {/* Next.js Image Component for automatic optimization */}
+              <Image
+                src="/path/to/front-end-engineer-image.svg"
+                width={550}
+                height={310}
+                alt="Front-End Engineer Icon"
+                className="w-full h-auto object-cover"
+                style={{ aspectRatio: "550/310", objectFit: "cover" }}
+              />
+            </div>
+            {/* Text Section */}
+            <div className="w-1/2 flex flex-col justify-between text-center">
               <div>
                 <h3 className="text-xl font-bold">Front-End Engineer</h3>
                 <p className="text-muted-foreground">XYZ Corp. | 2018 - 2020</p>
@@ -120,7 +159,24 @@ export default function Home() {
                 </p>
               </div>
             </div>
-            <div className="flex flex-col space-y-4">
+          </div>
+
+          {/* Additional job entries... */}
+          <div className="flex flex-row space-x-4">
+            {/* Image Section */}
+            <div className="rounded-lg overflow-hidden w-1/2">
+              {/* Next.js Image Component for automatic optimization */}
+              <Image
+                src="/path/to/web-developer-intern-image.svg"
+                width={550}
+                height={310}
+                alt="Web Developer Intern Icon"
+                className="w-full h-auto object-cover"
+                style={{ aspectRatio: "550/310", objectFit: "cover" }}
+              />
+            </div>
+            {/* Text Section */}
+            <div className="w-1/2 flex flex-col justify-between text-center">
               <div>
                 <h3 className="text-xl font-bold">Web Developer Intern</h3>
                 <p className="text-muted-foreground">Startup Inc. | 2017 - 2018</p>
@@ -129,18 +185,44 @@ export default function Home() {
                   applications and features.
                 </p>
               </div>
+            </div>
+          </div>
+
+          {/* Last job entry */}
+          <div className="flex flex-row space-x-4">
+            {/* Image Section */}
+            <div className="rounded-lg overflow-hidden w-1/2">
+              {/* Next.js Image Component for automatic optimization */}
+              <Image
+                src="/path/to/student-web-developer-image.svg"
+                width={550}
+                height={310}
+                alt="Student Web Developer Icon"
+                className="w-full h-auto object-cover"
+                style={{ aspectRatio: "550/310", objectFit: "cover" }}
+              />
+            </div>
+            {/* Text Section */}
+            <div className="w-1/2 flex flex-col justify-between text-center">
               <div>
                 <h3 className="text-xl font-bold">Student Web Developer</h3>
                 <p className="text-muted-foreground">University Project | 2016 - 2017</p>
                 <p className="text-muted-foreground">
-                  Collaborated with a team to build a university website, gaining hands-on experience in web
-                  development.
+                  Collaborated with a team to build a university website, gaining hands-on experience in web development.
                 </p>
               </div>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
+
+
+
+
+
+
+
       <section id="projects" className="w-full py-12 md:py-24 lg:py-32 bg-gray-200">
         <div className="container px-4 md:px-6 flex flex-col items-center justify-center space-y-4 text-center max-w-[900px] mx-auto">
           <div className="space-y-2">
@@ -228,6 +310,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+      
       <section id="contact" className="w-full py-12 md:py-24 lg:py-32">
         <div className="container px-4 md:px-6 flex flex-col items-center justify-center space-y-4 text-center max-w-[900px] mx-auto">
           <div className="space-y-2">
