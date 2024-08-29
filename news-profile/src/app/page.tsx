@@ -34,8 +34,10 @@ export default function Home() {
           </Link>
         </nav>
       </header>
+
+
       <section id="home" className="w-full py-12 md:py-24 lg:py-32 bg-background">
-        <div className="container px-4 md:px-6 flex items-center justify-center space-x-8">
+        <div className="container px-4 md:px-6 flex items-center justify-center space-x-8 max-w-[900px] mx-auto">
           <div className="w-1/2">
             <img
               src="/placeholder.svg"
@@ -63,8 +65,8 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section id="skills" className="w-full py-12 md:py-24 lg:py-32 bg-muted">
-        <div className="container px-4 md:px-6 flex flex-col items-center justify-center space-y-4 text-center">
+      <section id="skills" className="w-full py-12 md:py-24 lg:py-32 bg-gray-200">
+        <div className="container px-4 md:px-6 flex flex-col items-center justify-center space-y-4 text-center max-w-[900px] mx-auto">
           <div className="space-y-2">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">My Skills</h2>
             <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
@@ -138,7 +140,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section id="projects" className="w-full py-12 md:py-24 lg:py-32 bg-muted">
+      <section id="projects" className="w-full py-12 md:py-24 lg:py-32 bg-gray-200">
         <div className="container px-4 md:px-6 flex flex-col items-center justify-center space-y-4 text-center">
           <div className="space-y-2">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">My Projects</h2>
@@ -266,7 +268,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <footer className="bg-muted p-6 md:py-12 w-full">
+      <footer className="bg-gray-200 p-6 md:py-12 w-full">
         <div className="container max-w-7xl mx-auto grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-8 text-sm">
           <div className="grid gap-1">
             <h3 className="font-semibold">About</h3>
