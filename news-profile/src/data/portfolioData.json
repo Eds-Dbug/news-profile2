@@ -1,8 +1,8 @@
 {
     "introduction": {
-      "name": "John Doe",
+      "name": "Edgar Leung",
       "title": "Software Developer",
-      "summary": "Hello, I'm Edgar Leung, a passionate Full Stack Developer based in Toronto, Ontario. With a focus on UI and back-end development, I craft impactful web applications catering to diverse audiences, from blue-collar workers to librarians. Proficient in JavaScript, Java, React.js, and Node.js, I thrive in dynamic environments, delivering solutions that make a difference. See More to Learn more about me!",
+      "summary": "Hello, I'm Edgar Leung, a Full Stack Developer from Toronto focused on UI and back-end development. I build impactful web applications for diverse audiences, thriving in dynamic environments and delivering effective solutions.",
       "More": "Beyond coding, I'm an avid adventurer; my hobbies include long-distance bicycling—having biked from Toronto to Niagara Falls over five times and completing a 1100km journey around Georgian Bay. I also enjoy long runs, hikes, and engaging in strategic games like Warhammer, which enrich my perspective and creativity \n\n My journey into coding started during my high school days in robotics. Despite embarking on thrilling road adventures and exploring various opportunities, the persistent urge to code never left me. Now, I'm back in the world of coding, continuously learning and growing. I come from a Java background and am currently diving into Spring Boot to expand my full-stack development skills. Combining my experiences and expertise, I'm dedicated to creating innovative solutions that push boundaries.",
       "image": "Me.png" 
     },

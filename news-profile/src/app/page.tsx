@@ -8,8 +8,11 @@ import Image from "next/image"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { Button } from "@/components/ui/button"
+import profileData from "../data/portfolioData.json"
 
 export default function Home() {
+  const {introduction, workExperience, projects, education, skills} = profileData
+
   return (
     <div className="flex flex-col min-h-[100dvh]">
       <header className="bg-background sticky top-0 z-50 px-4 lg:px-6 h-14 flex items-center border-b">
@@ -35,8 +38,7 @@ export default function Home() {
           </Link>
         </nav>
       </header>
-
-      <section id="bio" className="w-full py-12 md:py-24 lg:py-32 bg-background">
+      <section id="bio" className="w-full py-8 md:py-12 lg:py-18 bg-background">
         <div className="container px-4 md:px-6 flex items-center justify-center space-x-8 max-w-[900px] mx-auto">
           <div className="w-1/2">
             <Image
@@ -50,9 +52,9 @@ export default function Home() {
           </div>
           <div className="w-1/2 space-y-6">
             <div className="space-y-2 text-center md:text-left">
-              <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl">John Doe</h1>
+              <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl">{introduction.name}</h1>
               <p className="max-w-[600px] text-muted-foreground md:text-xl">
-                I'm a full-stack developer with a passion for creating beautiful and functional web applications.
+                {introduction.summary}
               </p>
             </div>
             <Link
