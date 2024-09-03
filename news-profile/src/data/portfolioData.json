@@ -20,7 +20,14 @@
         "period": "2022 - 2023",
         "description": "Redesigned the merge queue tool for the Internet Archives to improve librarian accessibility and streamline author/work merges. Implemented Figma designs to enhance user interface efficiency and usability during remote collaboration.",
         "image": "IA.jpg"
-      }
+      },
+      {
+        "title": "Web Developer Student",
+        "company": "York University",
+        "period": "2017 - 2021",
+        "description": "Collaborated effectively in teams to complete various web development projects, focusing on both software design and implementation. Gained a strong foundation in Object-Oriented Programming (OOP) and algorithms through coursework and practical applications. Volunteered for multiple initiatives, primarily focused on data analytics, to support research projects and enhance data-driven decision-making processes.",
+        "image": "YorkUniversity.jpg"
+      }      
     ],
     "projects": [
       {
