@@ -1,0 +1,88 @@
+{
+    "introduction": {
+      "name": "John Doe",
+      "title": "Software Developer",
+      "summary": "Hello, I'm Edgar Leung, a passionate Full Stack Developer based in Toronto, Ontario. With a focus on UI and back-end development, I craft impactful web applications catering to diverse audiences, from blue-collar workers to librarians. Proficient in JavaScript, Java, React.js, and Node.js, I thrive in dynamic environments, delivering solutions that make a difference. See More to Learn more about me!",
+      "More": "Beyond coding, I'm an avid adventurer; my hobbies include long-distance bicycling—having biked from Toronto to Niagara Falls over five times and completing a 1100km journey around Georgian Bay. I also enjoy long runs, hikes, and engaging in strategic games like Warhammer, which enrich my perspective and creativity \n\n My journey into coding started during my high school days in robotics. Despite embarking on thrilling road adventures and exploring various opportunities, the persistent urge to code never left me. Now, I'm back in the world of coding, continuously learning and growing. I come from a Java background and am currently diving into Spring Boot to expand my full-stack development skills. Combining my experiences and expertise, I'm dedicated to creating innovative solutions that push boundaries.",
+      "image": "Me.png" 
+    },
+    "workExperience": [
+      {
+        "title": "Web Developer",
+        "company": "Sofvie Inc.",
+        "period": "2024",
+        "description": "Developed a mobile and web application for HVAC/R specialists to streamline inventory management and paperwork, incorporating QR scanning and seamless webflow integration. Collaborated effectively with technical and non-technical teams to design and implement new features with precision.",
+        "image": "Sofvie.png"
+      },
+      {
+        "title": "Web Developer intern",
+        "company": "Internet Archives.",
+        "period": "2022 - 2023",
+        "description": "Redesigned the merge queue tool for the Internet Archives to improve librarian accessibility and streamline author/work merges. Implemented Figma designs to enhance user interface efficiency and usability during remote collaboration.",
+        "image": "IA.png"
+      },
+      {
+        "title": "Web Developer Student",
+        "company": "York University",
+        "period": "2017 - 2021",
+        "description": "Collaborated effectively in teams to complete various web development projects, focusing on both software design and implementation. Gained a strong foundation in Object-Oriented Programming (OOP) and algorithms through coursework and practical applications. Volunteered for multiple initiatives, primarily focused on data analytics, to support research projects and enhance data-driven decision-making processes.",
+        "image": "YorkUniversity.png"
+      }      
+    ],
+    "projects": [
+      {
+        "name": "Getogether",
+        "description": "Getogether is a dynamic application designed for creating and sharing events, drawing inspiration from the functionality of platforms like Meetup. The primary objective is to provide users with a seamless experience for organizing and discovering events in their community.",
+        "image": "Getogether.png"
+      },
+      {
+        "name": "Warhammer Portfolio",
+        "description": "A blog website for showcasing all my Warhammer Figurines and for contacts for painting commisions. A long time hobbiest, I have done paint commisions in the past and have painted miniatures that I wish to display.",
+        "image": "Warhammer.png"
+      }
+    ],
+    "education": [
+      {
+        "degree": "Bachelor of Science in Computer Science",
+        "institution": "University of Example",
+        "period": "2014 - 2018"
+      }
+    ],
+    "skills": [
+      {
+        "category": "Frontend",
+        "items": [
+          "HTML",
+          "CSS",
+          "JavaScript",
+          "React",
+          "Next.js",
+          "Tailwind",
+          "jQuery"
+        ]
+      },
+      {
+        "category": "Backend",
+        "items": [
+          "Node.js",
+          "Express",
+          "Web.py",
+          "Flask",
+          "PostgreSQL"
+        ]
+      },
+      {
+        "category": "Tools & Frameworks",
+        "items": [
+          "Git",
+          "Webpack",
+          "Jest",
+          "Figma",
+          "VS Code",
+          "Agile",
+          "Jira"
+        ]
+      }
+    ]
+  }
+  
