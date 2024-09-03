@@ -2,35 +2,36 @@
     "introduction": {
       "name": "John Doe",
       "title": "Software Developer",
-      "summary": "Passionate full-stack developer with over 5 years of experience in building web applications and leading technical teams. Skilled in JavaScript, React, Node.js, and modern web technologies. Dedicated to writing clean, efficient code and always eager to learn and adopt new technologies.",
+      "summary": "Hello, I'm Edgar Leung, a passionate Full Stack Developer based in Toronto, Ontario. With a focus on UI and back-end development, I craft impactful web applications catering to diverse audiences, from blue-collar workers to librarians. Proficient in JavaScript, Java, React.js, and Node.js, I thrive in dynamic environments, delivering solutions that make a difference. See More to Learn more about me!",
+      "More": "Beyond coding, I'm an avid adventurer; my hobbies include long-distance bicycling—having biked from Toronto to Niagara Falls over five times and completing a 1100km journey around Georgian Bay. I also enjoy long runs, hikes, and engaging in strategic games like Warhammer, which enrich my perspective and creativity \n\n My journey into coding started during my high school days in robotics. Despite embarking on thrilling road adventures and exploring various opportunities, the persistent urge to code never left me. Now, I'm back in the world of coding, continuously learning and growing. I come from a Java background and am currently diving into Spring Boot to expand my full-stack development skills. Combining my experiences and expertise, I'm dedicated to creating innovative solutions that push boundaries.",
       "image": "/path/to/profile-image.jpg" 
     },
     "workExperience": [
       {
-        "title": "Full-Stack Developer",
-        "company": "Acme Inc.",
-        "period": "2020 - Present",
-        "description": "Developed and maintained complex web applications using React, Node.js, and various databases.",
-        "image": "/path/to/full-stack-developer-image.svg"
+        "title": "Web Developer",
+        "company": "Sofvie Inc.",
+        "period": "2024",
+        "description": "Developed a mobile and web application for HVAC/R specialists to streamline inventory management and paperwork, incorporating QR scanning and seamless webflow integration. Collaborated effectively with technical and non-technical teams to design and implement new features with precision.",
+        "image": "Sofvie.jpg"
       },
       {
-        "title": "Front-End Engineer",
-        "company": "XYZ Corp.",
-        "period": "2018 - 2020",
-        "description": "Designed and implemented responsive user interfaces using modern front-end technologies.",
-        "image": "/path/to/front-end-engineer-image.svg"
+        "title": "Web Developer intern",
+        "company": "Internet Archives.",
+        "period": "2022 - 2023",
+        "description": "Redesigned the merge queue tool for the Internet Archives to improve librarian accessibility and streamline author/work merges. Implemented Figma designs to enhance user interface efficiency and usability during remote collaboration.",
+        "image": "IA.jpg"
       }
     ],
     "projects": [
       {
         "name": "Project A",
         "description": "A social media platform built with React, Node.js, and MongoDB.",
-        "image": "/path/to/project-a-image.svg"
+        "image": "Getogether.jpg"
       },
       {
         "name": "Project B",
         "description": "An e-commerce site developed using Next.js and Firebase.",
-        "image": "/path/to/project-b-image.svg"
+        "image": "Warhammer.jpg"
       }
     ],
     "education": [
