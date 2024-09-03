@@ -93,7 +93,6 @@ export default function Home() {
         </div>
       </section>
 
-
       <section id="skills" className="w-full py-12 md:py-24 lg:py-32 bg-gray-200">
         <div className="container px-4 md:px-6 flex flex-col items-center justify-center space-y-4 text-center max-w-[900px] mx-auto">
           <div className="space-y-2">
@@ -102,21 +101,39 @@ export default function Home() {
               Here are some of the key technologies and tools I work with.
             </p>
           </div>
-          <div className="mx-auto grid max-w-5xl items-center gap-6 py-12 lg:grid-cols-3 lg:gap-12">
+          <div className="mx-auto grid max-w-5xl items-start gap-6 py-12 lg:grid-cols-3 lg:gap-12">
             <div className="flex flex-col items-center justify-center space-y-2">
               <CodeIcon className="h-12 w-12 text-primary" />
               <h3 className="text-xl font-bold">Front-end Development</h3>
-              <p className="text-muted-foreground">HTML, CSS, JavaScript, React, Next.js, Tailwind CSS</p>
+              <div className="flex flex-wrap justify-center gap-2">
+                {skills[0].items.map((item, idx) => (
+                  <span key={idx} className="bg-muted-foreground text-white text-md px-2 py-1">
+                    {item}
+                  </span>
+                ))}
+              </div>
             </div>
             <div className="flex flex-col items-center justify-center space-y-2">
               <DatabaseIcon className="h-12 w-12 text-primary" />
               <h3 className="text-xl font-bold">Back-end Development</h3>
-              <p className="text-muted-foreground">Node.js, Express, MongoDB, PostgreSQL, MySQL</p>
+              <div className="flex flex-wrap justify-center gap-2">
+                {skills[1].items.map((item, idx) => (
+                  <span key={idx} className="bg-muted-foreground text-white text-md px-2 py-1">
+                    {item}
+                  </span>
+                ))}
+              </div>
             </div>
             <div className="flex flex-col items-center justify-center space-y-2">
               <PenToolIcon className="h-12 w-12 text-primary" />
               <h3 className="text-xl font-bold">Tools and Workflows</h3>
-              <p className="text-muted-foreground">Git, GitHub, Figma, Visual Studio Code, Agile</p>
+              <div className="flex flex-wrap justify-center gap-2">
+                {skills[0].items.map((item, idx) => (
+                  <span key={idx} className="bg-muted-foreground text-white text-md px-2 py-1">
+                    {item}
+                  </span>
+                ))}
+              </div>
             </div>
           </div>
         </div>
