@@ -1,3 +1,5 @@
+"use client";
+
 /**
  * v0 by Vercel.
  * @see https://v0.dev/t/RpkScvnERwk
@@ -9,9 +11,15 @@ import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { Button } from "@/components/ui/button"
 import profileData from "../data/portfolioData.json"
+import { useState } from "react"
 
 export default function Home() {
   const {introduction, workExperience, projects, education, skills} = profileData
+
+  const [readMore, setReadMore] = useState(false);
+  const toggleReadMore = () => {
+    setReadMore((prevState) => !prevState);
+  }
 
   return (
     <div className="flex flex-col min-h-[100dvh]">
@@ -38,35 +46,54 @@ export default function Home() {
           </Link>
         </nav>
       </header>
+
       <section id="bio" className="w-full py-8 md:py-12 lg:py-18 bg-background">
-        <div className="container px-4 md:px-6 flex items-center justify-center space-x-8 max-w-[900px] mx-auto">
-          <div className="w-1/2">
-            <Image
-              src="/me.jpg"
-              width={400}
-              height={400}
-              alt="Edgar Leung"
-              className="rounded-full object-cover"
-              style={{ aspectRatio: "400/400", objectFit: "cover" }}
-            />
-          </div>
-          <div className="w-1/2 space-y-6">
-            <div className="space-y-2 text-center md:text-left">
-              <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl">{introduction.name}</h1>
-              <p className="max-w-[600px] text-muted-foreground md:text-xl">
-                {introduction.summary}
-              </p>
-            </div>
-            <Link
-              href="#contact"
-              className="inline-flex h-10 items-center justify-center rounded-md bg-primary px-8 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
-              prefetch={false}
-            >
-              Get in Touch
-            </Link>
-          </div>
-        </div>
-      </section>
+  <div className="container px-4 md:px-6 flex items-start justify-center space-x-8 max-w-[900px] mx-auto">
+    {/* Image Container */}
+    <div className="w-1/2 "> 
+      <Image
+        src="/me.jpg"
+        width={400}
+        height={400}
+        alt="Edgar Leung"
+        className="rounded-full object-cover w-full h-full"
+      />
+    </div>
+    
+    {/* Text Content */}
+    <div className="w-1/2 space-y-6">
+      <div className="space-y-2 text-center md:text-left">
+        <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl">{introduction.name}</h1>
+        <p className="max-w-[600px] text-muted-foreground md:text-xl">
+          {introduction.summary}
+        </p>
+        
+        {/* Read More Toggle Button */}
+        <button className="underline" onClick={toggleReadMore}>
+          {readMore ? "Read Less" : "Read More"}
+        </button>
+
+        {/* Read More Content */}
+        {readMore && (
+          <p className="max-w-[600px] text-muted-foreground md:text-xl">
+            {introduction.More}
+          </p>
+        )}
+      </div>
+
+      {/* Get in Touch Link */}
+      <Link
+        href="#contact"
+        className="inline-flex h-10 items-center justify-center rounded-md bg-primary px-8 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
+        prefetch={false}
+      >
+        Get in Touch
+      </Link>
+    </div>
+  </div>
+</section>
+
+
       <section id="skills" className="w-full py-12 md:py-24 lg:py-32 bg-gray-200">
         <div className="container px-4 md:px-6 flex flex-col items-center justify-center space-y-4 text-center max-w-[900px] mx-auto">
           <div className="space-y-2">
@@ -94,8 +121,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-
 
     <section id="work" className="w-full py-12 md:py-24 lg:py-32">
       <div className="container px-4 md:px-6 flex flex-col items-center justify-center space-y-4 text-center max-w-[900px] mx-auto">
