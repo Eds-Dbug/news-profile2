@@ -24,13 +24,13 @@
     ],
     "projects": [
       {
-        "name": "Project A",
-        "description": "A social media platform built with React, Node.js, and MongoDB.",
+        "name": "Getogether",
+        "description": "Getogether is a dynamic application designed for creating and sharing events, drawing inspiration from the functionality of platforms like Meetup. The primary objective is to provide users with a seamless experience for organizing and discovering events in their community.",
         "image": "Getogether.jpg"
       },
       {
-        "name": "Project B",
-        "description": "An e-commerce site developed using Next.js and Firebase.",
+        "name": "Warhammer Portfolio",
+        "description": "A blog website for showcasing all my Warhammer Figurines and for contacts for painting commisions. A long time hobbiest, I have done paint commisions in the past and have painted miniatures that I wish to display.",
         "image": "Warhammer.jpg"
       }
     ],
@@ -42,11 +42,40 @@
       }
     ],
     "skills": [
-      "JavaScript",
-      "React",
-      "Node.js",
-      "CSS",
-      "HTML"
+      {
+        "category": "Frontend",
+        "items": [
+          "HTML",
+          "CSS",
+          "JavaScript",
+          "React",
+          "Next.js",
+          "Tailwind",
+          ""
+        ]
+      },
+      {
+        "category": "Backend",
+        "items": [
+          "Node.js",
+          "Express",
+          "Web.py",
+          "Flask",
+          "PostgreSQL"
+        ]
+      },
+      {
+        "category": "Tools & Frameworks",
+        "items": [
+          "Git",
+          "Webpack",
+          "Jest",
+          "Figma",
+          "VS Code",
+          "Agile",
+          "Jira"
+        ]
+      }
     ]
   }
   
