@@ -36,12 +36,12 @@
       {
         "name": "Getogether",
         "description": "Getogether is a dynamic application designed for creating and sharing events, drawing inspiration from the functionality of platforms like Meetup. The primary objective is to provide users with a seamless experience for organizing and discovering events in their community.",
-        "image": "Getogether.png"
+        "image": "/pictures/projects/Getogether.png"
       },
       {
         "name": "Warhammer Portfolio",
         "description": "A blog website for showcasing all my Warhammer Figurines and for contacts for painting commisions. A long time hobbiest, I have done paint commisions in the past and have painted miniatures that I wish to display.",
-        "image": "Warhammer.png"
+        "image": "/pictures/projects/Warhammer.png"
       }
     ],
     "education": [
