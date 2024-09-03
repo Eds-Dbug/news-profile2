@@ -48,50 +48,50 @@ export default function Home() {
       </header>
 
       <section id="bio" className="w-full py-8 md:py-12 lg:py-18 bg-background">
-  <div className="container px-4 md:px-6 flex items-start justify-center space-x-8 max-w-[900px] mx-auto">
-    {/* Image Container */}
-    <div className="w-1/2 "> 
-      <Image
-        src="/me.jpg"
-        width={400}
-        height={400}
-        alt="Edgar Leung"
-        className="rounded-full object-cover w-full h-full"
-      />
-    </div>
-    
-    {/* Text Content */}
-    <div className="w-1/2 space-y-6">
-      <div className="space-y-2 text-center md:text-left">
-        <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl">{introduction.name}</h1>
-        <p className="max-w-[600px] text-muted-foreground md:text-xl">
-          {introduction.summary}
-        </p>
-        
-        {/* Read More Toggle Button */}
-        <button className="underline" onClick={toggleReadMore}>
-          {readMore ? "Read Less" : "Read More"}
-        </button>
+        <div className="container px-4 md:px-6 flex items-start justify-center space-x-8 max-w-[900px] mx-auto">
+          {/* Image Container */}
+          <div className="w-1/2 "> 
+            <Image
+              src="/me.jpg"
+              width={400}
+              height={400}
+              alt="Edgar Leung"
+              className="rounded-full object-cover w-full h-full"
+            />
+          </div>
+          
+          {/* Text Content */}
+          <div className="w-1/2 space-y-6">
+            <div className="space-y-2 text-center md:text-left">
+              <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl">{introduction.name}</h1>
+              <p className="max-w-[600px] text-muted-foreground md:text-xl">
+                {introduction.summary}
+              </p>
+              
+              {/* Read More Toggle Button */}
+              <button className="underline" onClick={toggleReadMore}>
+                {readMore ? "Read Less" : "Read More"}
+              </button>
 
-        {/* Read More Content */}
-        {readMore && (
-          <p className="max-w-[600px] text-muted-foreground md:text-xl">
-            {introduction.More}
-          </p>
-        )}
-      </div>
+              {/* Read More Content */}
+              {readMore && (
+                <p className="max-w-[600px] text-muted-foreground md:text-xl">
+                  {introduction.More}
+                </p>
+              )}
+            </div>
 
-      {/* Get in Touch Link */}
-      <Link
-        href="#contact"
-        className="inline-flex h-10 items-center justify-center rounded-md bg-primary px-8 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
-        prefetch={false}
-      >
-        Get in Touch
-      </Link>
-    </div>
-  </div>
-</section>
+            {/* Get in Touch Link */}
+            <Link
+              href="#contact"
+              className="inline-flex h-10 items-center justify-center rounded-md bg-primary px-8 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
+              prefetch={false}
+            >
+              Get in Touch
+            </Link>
+          </div>
+        </div>
+      </section>
 
 
       <section id="skills" className="w-full py-12 md:py-24 lg:py-32 bg-gray-200">
