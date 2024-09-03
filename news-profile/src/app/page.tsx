@@ -70,7 +70,7 @@ export default function Home() {
               
               {/* Read More Toggle Button */}
               <button className="underline" onClick={toggleReadMore}>
-                {readMore ? "Read Less" : "Read More"}
+                {readMore ? "Read Less \u2B06" : "Read More \u2B07"}
               </button>
 
               {/* Read More Content */}
