@@ -374,13 +374,10 @@ export default function Home() {
           <div className="grid gap-1">
             <h3 className="font-semibold">About</h3>
             <Link href="#" prefetch={false}>
-              Portfolio
-            </Link>
-            <Link href="#" prefetch={false}>
               Resume
             </Link>
             <Link href="#" prefetch={false}>
-              Testimonials
+              Linkedin
             </Link>
           </div>
           <div className="grid gap-1">
