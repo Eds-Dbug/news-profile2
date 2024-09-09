@@ -10,8 +10,10 @@ import Image from "next/image"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { Button } from "@/components/ui/button"
+import { Contact } from "../components"
 import profileData from "../data/portfolioData.json"
 import { useState } from "react"
+import Component from "@/components/main";
 
 export default function Home() {
   const {introduction, workExperience, projects, education, skills} = profileData
@@ -327,8 +329,12 @@ export default function Home() {
           </div>
         </div>
       </section>
-      
+
       <section id="contact" className="w-full py-12 md:py-24 lg:py-32">
+        <Contact/>
+      </section>
+      
+      {/* <section id="contact" className="w-full py-12 md:py-24 lg:py-32">
         <div className="container px-4 md:px-6 flex flex-col items-center justify-center space-y-4 text-center max-w-[900px] mx-auto">
           <div className="space-y-2">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Get in Touch</h2>
@@ -368,7 +374,8 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
+
       <footer className="bg-gray-200 p-6 md:py-12 w-full">
         <div className="container max-w-7xl mx-auto grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-8 text-sm max-w-[900px] mx-auto">
           <div className="grid gap-1">
