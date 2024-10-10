@@ -146,7 +146,7 @@ export default function Home() {
           <div className="space-y-2">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Work Experience</h2>
             <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-              Here's a summary of my professional background.
+              Here&apos;s a summary of my professional background.
             </p>
           </div>
           
@@ -235,7 +235,7 @@ export default function Home() {
         <div className="space-y-2">
           <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">My Projects</h2>
           <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-            Here are some of the projects I've worked on.
+            Here are some of the projects I&apos;ve worked on.
           </p>
         </div>
 
@@ -246,7 +246,7 @@ export default function Home() {
             <div className="flex flex-row space-x-4 mb-10">
               {/* Image Section */}
               <div className="rounded-lg overflow-hidden w-1/2">
-                <img
+                <Image
                   src={projects[1].image}
                   width="550"
                   height="310"
@@ -288,7 +288,7 @@ export default function Home() {
             <div className="flex flex-row space-x-4 mb-10">
               {/* Image Section */}
               <div className="rounded-lg overflow-hidden w-1/2">
-                <img
+                <Image
                   src={projects[0].image}
                   width="550"
                   height="310"

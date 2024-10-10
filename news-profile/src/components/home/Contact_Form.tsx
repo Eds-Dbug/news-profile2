@@ -8,7 +8,7 @@ import { Button } from "@/components/ui/button"
 export default function ContactForm() {
   const [state, handleSubmit] = useForm("xovabplw");
   if (state.succeeded) {
-      return <p>Thanks I'll get back to you!</p>;
+      return <p>Thanks I&apos;ll get back to you!</p>;
   }
   return (
     <div className="container px-4 md:px-6 flex flex-col items-center justify-center space-y-4 text-center max-w-[900px] mx-auto">

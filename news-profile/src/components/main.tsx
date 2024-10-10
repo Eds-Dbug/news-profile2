@@ -7,6 +7,7 @@ import Link from "next/link"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { Button } from "@/components/ui/button"
+import Image from "next/image"
 
 export default function Component() {
   return (
@@ -37,7 +38,7 @@ export default function Component() {
       <section id="home" className="w-full py-12 md:py-24 lg:py-32 bg-background">
         <div className="container px-4 md:px-6 flex items-center justify-center space-x-8">
           <div className="w-1/2">
-            <img
+            <Image
               src="/placeholder.svg"
               width={400}
               height={400}
@@ -50,7 +51,7 @@ export default function Component() {
             <div className="space-y-2 text-center md:text-left">
               <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl">John Doe</h1>
               <p className="max-w-[600px] text-muted-foreground md:text-xl">
-                I'm a full-stack developer with a passion for creating beautiful and functional web applications.
+                I&apos;m a full-stack developer with a passion for creating beautiful and functional web applications.
               </p>
             </div>
             <Link
@@ -95,7 +96,7 @@ export default function Component() {
           <div className="space-y-2">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Work Experience</h2>
             <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-              Here's a summary of my professional background.
+              Here&apos;s a summary of my professional background.
             </p>
           </div>
           <div className="mx-auto grid max-w-5xl items-start gap-6 py-12 lg:grid-cols-2 lg:gap-12">
@@ -143,14 +144,14 @@ export default function Component() {
           <div className="space-y-2">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">My Projects</h2>
             <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-              Here are some of the projects I've worked on.
+              Here are some of the projects I&apos;ve worked on.
             </p>
           </div>
           <div className="mx-auto grid max-w-5xl items-start gap-6 py-12 lg:grid-cols-1 lg:gap-12">
             <div className="flex flex-col space-y-4">
               <div className="flex flex-row space-x-4">
                 <div className="rounded-lg overflow-hidden w-1/2">
-                  <img
+                  <Image
                     src="/placeholder.svg"
                     width="550"
                     height="310"
@@ -186,7 +187,7 @@ export default function Component() {
               </div>
               <div className="flex flex-row space-x-4">
                 <div className="rounded-lg overflow-hidden w-1/2">
-                  <img
+                  <Image
                     src="/placeholder.svg"
                     width="550"
                     height="310"
