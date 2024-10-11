@@ -8,7 +8,7 @@ import { Button } from "@/components/ui/button"
 export default function ContactForm() {
   const [state, handleSubmit] = useForm("xovabplw");
   if (state.succeeded) {
-      return <p>Thanks I&apos;ll get back to you!</p>;
+      return <p className='text-center font-bold'>Thanks I&apos;ll get back to you!</p>;
   }
   return (
     <div className="container px-4 md:px-6 flex flex-col items-center justify-center space-y-4 text-center max-w-[900px] mx-auto">
@@ -39,6 +39,7 @@ export default function ContactForm() {
             />
           <Textarea
             id="message"
+            name="message"
             placeholder="Message"
             className="w-full px-3 py-2 text-sm bg-background rounded-lg focus-visible:ring-0 ring-0 focus-visible:ring-offset-0"
           />
@@ -65,4 +66,3 @@ export default function ContactForm() {
     </div>
   );
 }
-
