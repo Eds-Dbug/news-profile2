@@ -1,10 +1,12 @@
 {
+  
     "introduction": {
       "name": "Edgar Leung",
       "title": "Software Developer",
       "summary": "I’m Edgar Leung, a Full Stack Developer from Toronto. I specialize in building user-focused, scalable web applications. Whether working on the front-end or back-end, I approach every project with resilience and a problem-solving mindset, always ready to tackle new challenges and deliver results.",
-      "More": "My journey into coding started in high school robotics, where I realized the power of technology to solve real-world problems. A pivotal moment came during Army bootcamp when a friend—a philosophy major—asked me to create a portfolio website for them. Juggling rigorous training schedules, I couldn’t deliver on the promise, but that experience left me with a realization: I wanted to create meaningful applications that help others achieve their goals. Since then, my determination has driven me to continually grow as a developer, adapting to new tools and challenges.\nOutside of development, I enjoy cycling long distances, hiking, and diving into strategic games like Warhammer. These activities fuel my creativity and help me approach problems with resilience. As I continue to grow in my career, I’m focused on creating solutions that not only meet business needs but also make a lasting impact.",
-      "image": "Me.png" 
+      "Journey": "My journey into coding started in high school robotics, where I realized the power of technology to solve real-world problems. A pivotal moment came during Army bootcamp when a friend—a philosophy major—asked me to create a portfolio website for them. Juggling rigorous training schedules, I couldn’t deliver on the promise, but that experience left me with a realization: I wanted to create meaningful applications that help others achieve their goals. Since then, my determination has driven me to continually grow as a developer, adapting to new tools and challenges.",
+      "Hobbies": "Outside of development, I enjoy cycling long distances, hiking, and diving into strategic games like Warhammer. These activities fuel my creativity and help me approach problems with resilience. As I continue to grow in my career, I’m focused on creating solutions that not only meet business needs but also make a lasting impact.",
+      "image": "Me.png"
     },
     "workExperience": [
       {
