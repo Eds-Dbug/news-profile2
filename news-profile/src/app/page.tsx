@@ -29,27 +29,36 @@ export default function Home() {
     <div className="flex flex-col min-h-[100dvh]">
       <header className="bg-background sticky top-0 z-50 px-4 lg:px-6 h-14 flex items-center border-b">
         <div className="flex space-x-2">
-        <div className="flex space-x-2">
-  {/* Phone Icon with phone number */}
-  <Link href="tel:+14168223939" className="flex items-center justify-center" prefetch={false}>
-    <PhoneIcon className="h-6 w-6" />
-  </Link>
+        <div className="flex space-x-3">
+        <Link href="/resume/Edgar_Resume.pdf" target="_blank" className="flex items-center justify-center" prefetch={false}>
+          <BriefcaseIcon className="h-6 w-6 mr-1" />
+          RESUME
+        </Link>
+        {/* Phone Icon with phone number */}
+        <Link href="tel:+14168223939" target="_blank" className="flex items-center justify-center" prefetch={false}>
+          <PhoneIcon className="h-6 w-6 mr-1" />
+          416 822-3939
+        </Link>
 
-  {/* Email Icon with mailto */}
-  <Link href="mailto:edgar.debug@gmail.com" className="flex items-center justify-center" prefetch={false}>
-    <MailIcon className="h-6 w-6" />
-  </Link>
+        {/* Email Icon with mailto */}
+        <Link href="mailto:edgar.debug@gmail.com" target="_blank" className="flex items-center justify-center" prefetch={false}>
+          <MailIcon className="h-6 w-6 mr-1" />
+          EMAIL
+        </Link>
 
-  {/* GitHub Icon */}
-  <Link href="https://github.com/yourusername" className="flex items-center justify-center" prefetch={false}>
-    <GitHubLogoIcon className="h-6 w-6" />
-  </Link>
+        {/* GitHub Icon */}
+        <Link href="https://github.com/Eds-Dbug" target="_blank" className="flex items-center justify-center" prefetch={false}>
+          <GitHubLogoIcon className="h-6 w-6 mr-1" />
+          GITHUB
+        </Link>
 
-  {/* LinkedIn Icon */}
-  <Link href="https://www.linkedin.com/in/edgar-leung" className="flex items-center justify-center" prefetch={false}>
-    <LinkedinIcon className="h-6 w-6" />
-  </Link>
-</div>
+        {/* LinkedIn Icon */}
+        <Link href="https://www.linkedin.com/in/edgar-leung" target="_blank" className="flex items-center justify-center" prefetch={false}>
+          <LinkedinIcon className="h-6 w-6 mr-1" />
+          LINKEDIN
+        </Link>
+
+      </div>
 
 
         </div>
