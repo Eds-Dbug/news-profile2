@@ -55,7 +55,7 @@ export default function ContactForm() {
         <div className="flex flex-col items-center gap-2 text-muted-foreground">
           <div className="flex items-center gap-2">
             <MailIcon className="h-4 w-4" />
-            <span>edgarleung989@gmail.com</span>
+            <span>edgar.debug@gmail.com</span>
           </div>
           <div className="flex items-center gap-2">
             <PhoneIcon className="h-4 w-4" />
