@@ -10,6 +10,14 @@
     },
     "workExperience": [
       {
+        "title": "Full Stack Developer",
+        "company": "Trustytots",
+        "period": "2024",
+        "project": "Daycare Search Platform",
+        "description": "Contributed to the development of a full-stack daycare search and booking platform, optimizing user experience and real-time communication features. Led the implementation of real-time search, booking management, and user authentication systems using Next.js, MongoDB, and integrated third-party APIs. The platform achieved 3rd place among investor-evaluated startups.",
+        "image": "/pictures/orgs/trustytots.png"
+      },      
+      {
         "title": "Web Developer",
         "company": "Sofvie Inc.",
         "period": "2024",
@@ -62,6 +70,7 @@
           "JavaScript",
           "React",
           "Next.js",
+          "BootStrap",
           "Tailwind",
           "jQuery"
         ]
@@ -69,25 +78,62 @@
       {
         "category": "Backend",
         "items": [
+          "JavaScript",
+          "Python",
+          "Java",
           "Node.js",
           "Express",
           "Web.py",
           "Flask",
-          "PostgreSQL"
+          "PostgreSQL",
+          "MongoDB"
         ]
       },
       {
-        "category": "Tools & Frameworks",
+        "category": "Cloud & Testing",
+        "items": [
+          "AWS",
+          "Docker",
+          "Jest",
+          "Mocha",
+          "JUnit",
+          "Unit Testing",
+          "Integration Testing"
+        ]
+      },
+      {
+        "category": "APIs",
+        "items": [
+          "Stripe",
+          "Google Maps",
+          "Twilio",
+          "Pusher",
+          "TalkJS"
+        ]
+      },
+      {
+        "category": "Additional Tools",
         "items": [
           "Git",
-          "Webpack",
-          "Jest",
           "Figma",
           "VS Code",
+          "Jira",
+          "MongoDB Compass",
+          "Bash"
+        ]
+      },
+      {
+        "category": "Soft Skills",
+        "items": [
           "Agile",
-          "Jira"
+          "Leadership",
+          "Collaboration",
+          "Communication",
+          "Troubleshooting",
+          "Time Management",
+          "Adaptability"
         ]
       }
-    ]
+    ]  
   }
   
