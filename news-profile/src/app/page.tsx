@@ -15,7 +15,7 @@ import profileData from "../data/portfolioData.json";
 import { useState } from "react";
 import Component from "@/components/main";
 import { GitHubLogoIcon, LinkedInLogoIcon } from "@radix-ui/react-icons";
-import { GithubIcon, LinkedinIcon, LucideGithub } from "lucide-react";
+import { Cable, CloudIcon, GithubIcon, LinkedinIcon, LucideGithub, Users } from "lucide-react";
 
 export default function Home() {
   const { introduction, workExperience, projects, education, skills } = profileData;
@@ -59,7 +59,6 @@ export default function Home() {
         </Link>
 
       </div>
-
 
         </div>
         <nav className="ml-auto flex gap-4 sm:gap-6">
@@ -119,15 +118,19 @@ export default function Home() {
       </section>
 
       <section id="skills" className="w-full py-12 md:py-24 lg:py-32 bg-gray-200">
-        <div className="container px-4 md:px-6 flex flex-col items-center justify-center space-y-4 text-center max-w-[900px] mx-auto">
+        <div className="container px-4 md:px-6 flex flex-col items-center justify-center space-y-4 text-center mx-auto">
           <div className="space-y-2">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">My Skills</h2>
-            <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">Here are some of the key technologies and tools I work with.</p>
+            <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+              Here are some of the key technologies and tools I work with.
+            </p>
           </div>
-          <div className="mx-auto grid max-w-5xl items-start gap-6 py-12 lg:grid-cols-3 lg:gap-12">
+
+          <div className="mx-auto grid max-w-6xl items-start gap-6 py-12 lg:grid-cols-3 lg:gap-12">
+            {/* Frontend Section */}
             <div className="flex flex-col items-center justify-center space-y-2">
               <CodeIcon className="h-12 w-12 text-primary" />
-              <h3 className="text-xl font-bold">Front-end Development</h3>
+              <h3 className="text-xl font-bold">Frontend Development</h3>
               <div className="flex flex-wrap justify-center gap-2">
                 {skills[0].items.map((item, idx) => (
                   <span key={idx} className="bg-muted-foreground text-white text-md px-2 py-1">
@@ -136,9 +139,11 @@ export default function Home() {
                 ))}
               </div>
             </div>
+
+            {/* Backend Section */}
             <div className="flex flex-col items-center justify-center space-y-2">
               <DatabaseIcon className="h-12 w-12 text-primary" />
-              <h3 className="text-xl font-bold">Back-end Development</h3>
+              <h3 className="text-xl font-bold">Backend Development</h3>
               <div className="flex flex-wrap justify-center gap-2">
                 {skills[1].items.map((item, idx) => (
                   <span key={idx} className="bg-muted-foreground text-white text-md px-2 py-1">
@@ -147,11 +152,52 @@ export default function Home() {
                 ))}
               </div>
             </div>
+
+            {/* Cloud & Testing Section */}
+            <div className="flex flex-col items-center justify-center space-y-2">
+              <CloudIcon className="h-12 w-12 text-primary" /> {/* Add a new Cloud Icon */}
+              <h3 className="text-xl font-bold">Cloud & Testing</h3>
+              <div className="flex flex-wrap justify-center gap-2">
+                {skills[2].items.map((item, idx) => (
+                  <span key={idx} className="bg-muted-foreground text-white text-md px-2 py-1">
+                    {item}
+                  </span>
+                ))}
+              </div>
+            </div>
+
+            {/* API's Section */}
+            <div className="flex flex-col items-center justify-center space-y-2">
+              <Cable className="h-12 w-12 text-primary" />
+              <h3 className="text-xl font-bold">API's</h3>
+              <div className="flex flex-wrap justify-center gap-2">
+                {skills[3].items.map((item, idx) => (
+                  <span key={idx} className="bg-muted-foreground text-white text-md px-2 py-1">
+                    {item}
+                  </span>
+                ))}
+              </div>
+            </div>
+
+            {/* Other Tools Section */}
             <div className="flex flex-col items-center justify-center space-y-2">
               <PenToolIcon className="h-12 w-12 text-primary" />
-              <h3 className="text-xl font-bold">Tools and Workflows</h3>
+              <h3 className="text-xl font-bold">Addtional Tools</h3>
               <div className="flex flex-wrap justify-center gap-2">
-                {skills[0].items.map((item, idx) => (
+                {skills[4].items.map((item, idx) => (
+                  <span key={idx} className="bg-muted-foreground text-white text-md px-2 py-1">
+                    {item}
+                  </span>
+                ))}
+              </div>
+            </div>
+
+            {/* Soft Skills Section */}
+            <div className="flex flex-col items-center justify-center space-y-2">
+              <Users className="h-12 w-12 text-primary" /> {/* Add a new People/Soft Skills Icon */}
+              <h3 className="text-xl font-bold">Soft Skills</h3>
+              <div className="flex flex-wrap justify-center gap-2">
+                {skills[5].items.map((item, idx) => (
                   <span key={idx} className="bg-muted-foreground text-white text-md px-2 py-1">
                     {item}
                   </span>
@@ -162,71 +208,45 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="work" className="w-full py-12 md:py-24 lg:py-32">
+
+      <section id="work" className="w-full py-12 md:py-24 lg:py-32 ">
         <div className="container px-4 md:px-6 flex flex-col items-center justify-center space-y-4 text-center max-w-[900px] mx-auto">
           <div className="space-y-2">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Work Experience</h2>
-            <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">Here&apos;s a summary of my professional background.</p>
+            <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+              Here&apos;s a summary of my professional background.
+            </p>
           </div>
 
           <div className="mx-auto grid max-w-5xl gap-6 py-12">
-            <div className="flex flex-row space-x-4 min-h-full">
-              <div className="rounded-lg overflow-hidden w-1/2 h-full flex items-center justify-center">
-                <Image src={workExperience[0].image} width={550} height={310} alt="Full-Stack Developer Icon" className="w-full h-auto object-contain" priority />
-              </div>
+            {workExperience.map((job, index) => (
+              <div key={index} className="flex flex-row space-x-4 min-h-full">
+                {/* Image Section */}
+                <div className="rounded-lg overflow-hidden w-1/2 h-full flex items-center justify-center">
+                  <Image
+                    src={job.image}
+                    width={550}
+                    height={310}
+                    alt={`${job.title} Icon`}
+                    className="w-full h-auto object-contain"
+                    priority
+                  />
+                </div>
 
-              {/* Text Section */}
-              <div className="w-1/2 flex flex-col justify-center text-left pl-4">
-                {" "}
-                {/* Adjusted alignment and added padding */}
-                <div>
-                  <h3 className="text-xl font-bold">{workExperience[0].title}</h3>
-                  <p className="text-muted-foreground mb-2">{workExperience[0].project + " | " + workExperience[0].period}</p>
-                  <p className="text-muted-foreground">{workExperience[0].description}</p>
+                {/* Text Section */}
+                <div className="w-1/2 flex flex-col justify-center text-left pl-4">
+                  <div>
+                    <h3 className="text-xl font-bold">{job.title}</h3>
+                    <p className="text-muted-foreground mb-2">{job.project + " | " + job.period}</p>
+                    <p className="text-muted-foreground">{job.description}</p>
+                  </div>
                 </div>
               </div>
-            </div>
-
-            {/* Additional job entries */}
-            <div className="flex flex-row space-x-4 min-h-full">
-              {/* Image Section */}
-              <div className="rounded-lg overflow-hidden w-1/2 h-full flex items-center justify-center">
-                <Image src={workExperience[1].image} width={550} height={310} alt="Web Developer Intern Icon" className="w-full h-auto object-contain" priority />
-              </div>
-
-              {/* Text Section */}
-              <div className="w-1/2 flex flex-col justify-center text-left pl-4">
-                {" "}
-                {/* Adjusted alignment and added padding */}
-                <div>
-                  <h3 className="text-xl font-bold">{workExperience[1].title}</h3>
-                  <p className="text-muted-foreground mb-2">{workExperience[1].project + " | " + workExperience[1].period}</p>
-                  <p className="text-muted-foreground">{workExperience[1].description}</p>
-                </div>
-              </div>
-            </div>
-
-            {/* Last job entry */}
-            <div className="flex flex-row space-x-4 min-h-full">
-              {/* Image Section */}
-              <div className="rounded-lg overflow-hidden w-1/2 h-full flex items-center justify-center">
-                <Image src={workExperience[2].image} width={550} height={310} alt="Student Web Developer Icon" className="w-full h-auto object-contain" priority />
-              </div>
-
-              {/* Text Section */}
-              <div className="w-1/2 flex flex-col justify-center text-left pl-4">
-                {" "}
-                {/* Adjusted alignment and added padding */}
-                <div>
-                  <h3 className="text-xl font-bold">{workExperience[2].title}</h3>
-                  <p className="text-muted-foreground mb-2">{workExperience[2].project + " | " + workExperience[2].period}</p>
-                  <p className="text-muted-foreground">{workExperience[2].description}</p>
-                </div>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </section>
+
 
       {/* <section id="projects" className="w-full py-12 md:py-24 lg:py-32 bg-gray-200">
       </section> */}
