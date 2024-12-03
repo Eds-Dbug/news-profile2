@@ -50,36 +50,39 @@ export default function Home() {
       </header>
 
       <section id="bio" className="w-full py-8 md:py-12 lg:py-18 bg-background">
-        <div className="container px-4 md:px-6 flex items-start justify-center space-x-8 max-w-[900px] mx-auto">
+        <div className="container px-4 md:px-6 flex items-start justify-center space-x-8 max-w-1/2 mx-auto">
           {/* Image Container */}
-          <div className="w-1/2 ">
+          <div className="w-1/2">
             <Image src="/me.jpg" width={400} height={400} alt="Edgar Leung" className="rounded-full object-cover w-full h-full" />
-          </div>
-
-          {/* Text Content */}
-          <div className="w-1/2 space-y-6">
-            <div className="space-y-2 text-center md:text-left">
-              <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl">{introduction.name}</h1>
-              <p className="max-w-[600px] text-muted-foreground md:text-xl">{introduction.summary}</p>
-
-              {/* Read More Toggle Button */}
-              <button className="underline" onClick={toggleReadMore}>
-                {readMore ? "Read Less \u2B06" : "Read More \u2B07"}
-              </button>
-
-              {/* Read More Content */}
-              {readMore && <p className="max-w-[600px] text-muted-foreground md:text-xl">{introduction.More}</p>}
-            </div>
-
-            {/* Get in Touch Link */}
-            <Link
+             {/* Get in Touch Link */}
+             <Link
               href="#contact"
-              className="inline-flex h-10 items-center justify-center rounded-md bg-primary px-8 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
+              className="w-full inline-flex h-10 items-center justify-center bg-primary px-8 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
               prefetch={false}
             >
               Get in Touch
             </Link>
           </div>
+
+          {/* Text Content */}
+          <div className="w-1/2 space-y-6">
+            <div className="space-y-10 flex-col ml-5">
+              <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl">{introduction.name}</h1>
+              <p className="max-w-1/2 text-muted-foreground md:text-xl">{introduction.summary}</p>
+              <br />
+              {/* Read More Toggle Button */}
+              <div className="flex">
+                <button className="underline text-3xl font-semibold" onClick={toggleReadMore}>
+                  {readMore ? "Read Less \u2B06" : "Read More \u2B07"}
+                </button>
+              </div>
+            </div>
+          </div>
+          <div className="w-1/2 space-y-6">
+            {/* Read More Content */}
+            {readMore && (<div><h1 className="text-center text-2xl mb-4 text-muted-foreground font-semibold underline tracking-tighter ">Reading More</h1><p className="text-muted-foreground md:text-xl">{introduction.Journey}</p><br /><p className="text-muted-foreground md:text-xl">{introduction.Hobbies}</p></div>) }
+          </div>
+
         </div>
       </section>
 
