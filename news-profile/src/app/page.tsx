@@ -72,9 +72,9 @@ export default function Home() {
           <Link href="#work" className="text-sm font-medium hover:underline underline-offset-4" prefetch={false}>
             Work
           </Link>
-          <Link href="#projects" className="text-sm font-medium hover:underline underline-offset-4" prefetch={false}>
+          {/* <Link href="#projects" className="text-sm font-medium hover:underline underline-offset-4" prefetch={false}>
             Projects
-          </Link>
+          </Link> */}
           <Link href="#contact" className="text-sm font-medium hover:underline underline-offset-4" prefetch={false}>
             Contact
           </Link>
