@@ -14,6 +14,8 @@ import Contact from "../components/home/Contact";
 import profileData from "../data/portfolioData.json";
 import { useState } from "react";
 import Component from "@/components/main";
+import { GitHubLogoIcon, LinkedInLogoIcon } from "@radix-ui/react-icons";
+import { GithubIcon, LinkedinIcon, LucideGithub } from "lucide-react";
 
 export default function Home() {
   const { introduction, workExperience, projects, education, skills } = profileData;
@@ -26,10 +28,31 @@ export default function Home() {
   return (
     <div className="flex flex-col min-h-[100dvh]">
       <header className="bg-background sticky top-0 z-50 px-4 lg:px-6 h-14 flex items-center border-b">
-        <Link href="#" className="flex items-center justify-center" prefetch={false}>
-          <BriefcaseIcon className="h-6 w-6" />
-          <span className="sr-only">Portfolio</span>
-        </Link>
+        <div className="flex space-x-2">
+        <div className="flex space-x-2">
+  {/* Phone Icon with phone number */}
+  <Link href="tel:+14168223939" className="flex items-center justify-center" prefetch={false}>
+    <PhoneIcon className="h-6 w-6" />
+  </Link>
+
+  {/* Email Icon with mailto */}
+  <Link href="mailto:edgar.debug@gmail.com" className="flex items-center justify-center" prefetch={false}>
+    <MailIcon className="h-6 w-6" />
+  </Link>
+
+  {/* GitHub Icon */}
+  <Link href="https://github.com/yourusername" className="flex items-center justify-center" prefetch={false}>
+    <GitHubLogoIcon className="h-6 w-6" />
+  </Link>
+
+  {/* LinkedIn Icon */}
+  <Link href="https://www.linkedin.com/in/edgar-leung" className="flex items-center justify-center" prefetch={false}>
+    <LinkedinIcon className="h-6 w-6" />
+  </Link>
+</div>
+
+
+        </div>
         <nav className="ml-auto flex gap-4 sm:gap-6">
           <Link href="#" className="text-sm font-medium hover:underline underline-offset-4" prefetch={false}>
             Bio
@@ -196,133 +219,14 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="projects" className="w-full py-12 md:py-24 lg:py-32 bg-gray-200">
-        <div className="container px-4 md:px-6 flex flex-col items-center justify-center space-y-4 text-center max-w-[900px] mx-auto">
-          <div className="space-y-2">
-            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">My Projects</h2>
-            <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">Here are some of the projects I&apos;ve worked on.</p>
-          </div>
+      {/* <section id="projects" className="w-full py-12 md:py-24 lg:py-32 bg-gray-200">
+      </section> */}
 
-          {/* Projects Entries */}
-          <div className="mx-auto grid max-w-5xl items-start gap-6 py-12 lg:grid-cols-1 lg:gap-12">
-            <div className="flex flex-col space-y-4 ">
-              {/* Project 1 */}
-              <div className="flex flex-row space-x-4 mb-10">
-                {/* Image Section */}
-                <div className="rounded-lg overflow-hidden w-1/2">
-                  <Image src={projects[1].image} width="550" height="310" alt="Project 1" className="w-full h-auto object-cover" style={{ aspectRatio: "550/310", objectFit: "cover" }} />
-                </div>
-
-                {/* Text Section */}
-                <div className="w-1/2 flex flex-col justify-between">
-                  <div>
-                    <h3 className="text-xl font-bold mb-2">{projects[1].name}</h3>
-                    <p className="text-muted-foreground">{projects[1].description}</p>
-                  </div>
-                  {/* Links Section */}
-                  <div className="flex justify-center gap-2 mt-2">
-                    <Link
-                      href="https://github.com/Eds-Dbug/warhammer-blog"
-                      className="inline-flex h-9 items-center justify-center rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
-                      prefetch={false}
-                    >
-                      View Project
-                    </Link>
-                    {/* <Link
-                    href="#"
-                    className="inline-flex h-9 items-center justify-center rounded-md border border-input bg-background px-4 py-2 text-sm font-medium shadow-sm transition-colors hover:bg-accent hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
-                    prefetch={false}
-                  >
-                    GitHub
-                  </Link> */}
-                  </div>
-                </div>
-              </div>
-
-              {/* Project 2 */}
-              <div className="flex flex-row space-x-4 mb-10">
-                {/* Image Section */}
-                <div className="rounded-lg overflow-hidden w-1/2">
-                  <Image src={projects[0].image} width="550" height="310" alt="Project 2" className="w-full h-auto object-cover" style={{ aspectRatio: "550/310", objectFit: "cover" }} />
-                </div>
-
-                {/* Text Section */}
-                <div className="w-1/2 flex flex-col justify-between">
-                  <div>
-                    <h3 className="text-xl font-bold mb-2">{projects[0].name}</h3>
-                    <p className="text-muted-foreground">{projects[0].description}</p>
-                  </div>
-                  {/* Links Section */}
-                  <div className="flex justify-center gap-2 mt-2">
-                    <Link
-                      href="https://github.com/Eds-Dbug/Getogether"
-                      className="inline-flex h-9 items-center justify-center rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
-                      prefetch={false}
-                    >
-                      View Project
-                    </Link>
-                    {/* <Link
-                    href="#"
-                    className="inline-flex h-9 items-center justify-center rounded-md border border-input bg-background px-4 py-2 text-sm font-medium shadow-sm transition-colors hover:bg-accent hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
-                    prefetch={false}
-                  >
-                    GitHub
-                  </Link> */}
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="contact" className="w-full py-12 md:py-24 lg:py-32">
+      <section id="contact" className="w-full py-12 md:py-24 lg:py-32 bg-gray-200">
         <Contact />
       </section>
 
-      {/* <section id="contact" className="w-full py-12 md:py-24 lg:py-32">
-        <div className="container px-4 md:px-6 flex flex-col items-center justify-center space-y-4 text-center max-w-[900px] mx-auto">
-          <div className="space-y-2">
-            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Get in Touch</h2>
-            <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-              Feel free to reach out to me for any inquiries or opportunities.
-            </p>
-          </div>
-          <div className="mx-auto w-full max-w-sm space-y-2">
-            <form className="flex flex-col gap-4">
-              <Input
-                type="text"
-                placeholder="Name"
-                className="w-full px-3 py-2 text-sm bg-background rounded-lg focus-visible:ring-0 ring-0 focus-visible:ring-offset-0"
-              />
-              <Input
-                type="email"
-                placeholder="Email"
-                className="w-full px-3 py-2 text-sm bg-background rounded-lg focus-visible:ring-0 ring-0 focus-visible:ring-offset-0"
-              />
-              <Textarea
-                placeholder="Message"
-                className="w-full px-3 py-2 text-sm bg-background rounded-lg focus-visible:ring-0 ring-0 focus-visible:ring-offset-0"
-              />
-              <Button type="submit" className="w-full">
-                Submit
-              </Button>
-            </form>
-            <div className="flex flex-col items-center gap-2 text-muted-foreground">
-              <div className="flex items-center gap-2">
-                <MailIcon className="h-4 w-4" />
-                <span>edgarleung989@gmail.com</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <PhoneIcon className="h-4 w-4" />
-                <span>+1 (416) 822-3939</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section> */}
-
-      <footer className="bg-gray-200 p-6 md:py-12 w-full">
+      {/* <footer className="bg-gray-200 p-6 md:py-12 w-full">
         <div className="container max-w-7xl mx-auto grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-8 text-sm max-w-[900px] mx-auto">
           <div className="grid gap-1">
             <h3 className="font-semibold">About</h3>
@@ -337,7 +241,7 @@ export default function Home() {
             <h3 className="font-semibold">Services</h3>
           </div>
         </div>
-      </footer>
+      </footer> */}
     </div>
   );
 }
@@ -397,3 +301,9 @@ function PhoneIcon(props: any) {
     </svg>
   );
 }
+
+
+  
+
+
+
