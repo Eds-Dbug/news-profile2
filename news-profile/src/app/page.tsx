@@ -34,11 +34,6 @@ export default function Home() {
           <BriefcaseIcon className="h-6 w-6 mr-1" />
           RESUME
         </Link>
-        {/* Phone Icon with phone number */}
-        <Link href="tel:+14168223939" target="_blank" className="flex items-center justify-center" prefetch={false}>
-          <PhoneIcon className="h-6 w-6 mr-1" />
-          416 822-3939
-        </Link>
 
         {/* Email Icon with mailto */}
         <Link href="mailto:edgar.debug@gmail.com" target="_blank" className="flex items-center justify-center" prefetch={false}>

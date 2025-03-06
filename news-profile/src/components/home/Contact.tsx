@@ -57,10 +57,7 @@ export default function ContactForm() {
             <MailIcon className="h-4 w-4" />
             <span>edgar.debug@gmail.com</span>
           </div>
-          <div className="flex items-center gap-2">
-            <PhoneIcon className="h-4 w-4" />
-            <span>+1 (416) 822-3939</span>
-          </div>
+
         </div>
       </div>
     </div>
